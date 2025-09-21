@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 // Filecoin Calibration Testnet Configuration
 export const FILECOIN_CONFIG = {
   chainId: 3141592,
-  rpcUrl: 'https://api.calibration.node.glif.io/rpc/v1',
+  rpcUrl: process.env.REACT_APP_RPC_URL || 'https://calibration.filfox.info/rpc/v1',
   symbol: 'tFIL',
   name: 'Filecoin Calibration Testnet',
   blockExplorer: 'https://calibration.filscan.io'
