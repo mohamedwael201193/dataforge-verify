@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+# DataForge Hub - Wave 2 MVP
 
-## Project info
+The premier decentralized marketplace for verifiable AI datasets on Filecoin Onchain Cloud.
 
-**URL**: https://lovable.dev/projects/c92c6b7e-6ef3-4263-8080-31c0be52fe66
+## 🚀 Features
 
-## How can I edit this code?
+- **Verifiable Datasets**: PDP proofs ensure cryptographic integrity
+- **FilCDN Integration**: Lightning-fast data retrieval (<1s SLA)
+- **Filecoin Pay Rails**: Streaming payments with USDFC
+- **NFT Marketplace**: ERC-721 datasets with decentralized ownership
+- **Bias Analytics**: Interactive charts showing diversity metrics
+- **Real Contract Integration**: Live Filecoin Calibration testnet
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Blockchain**: Ethers.js v6, Filecoin Calibration testnet
+- **Animation**: Framer Motion
+- **Charts**: Recharts
+- **UI**: Shadcn/ui components with custom DataForge variants
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c92c6b7e-6ef3-4263-8080-31c0be52fe66) and start prompting.
+## 🔧 Setup
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Install dependencies**:
+```bash
+npm install
+```
 
-**Use your preferred IDE**
+2. **Environment setup**:
+```bash
+cp .env.example .env
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. **Start development server**:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🌐 Filecoin Integration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Network**: Filecoin Calibration Testnet
+- **RPC**: https://api.calibration.node.glif.io/rpc/v1
+- **Chain ID**: 3141592
+- **Contract**: 0x569C43c4Cb8e332037Bc02ae997177F35cd8a017
 
-**Use GitHub Codespaces**
+## 📝 Usage
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Connect Wallet**: MetaMask with Filecoin Calibration network
+2. **Browse Datasets**: Explore verified AI training data
+3. **Preview Data**: Pay 0.1 USDFC for FilCDN sample access
+4. **Purchase Access**: Stream payments for full dataset access
+5. **List Datasets**: Mint NFTs with PDP verification
 
-## What technologies are used for this project?
+## 🎨 Design System
 
-This project is built with:
+- **Theme**: Dark-first with blue-purple AI gradients
+- **Components**: Glass morphism effects, semantic color tokens
+- **Typography**: Inter font with gradient text effects
+- **Animations**: Smooth transitions, hover effects, loading states
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🚀 Deployment
 
-## How can I deploy this project?
+Ready for Vercel/Netlify deployment. Build with:
 
-Simply open [Lovable](https://lovable.dev/projects/c92c6b7e-6ef3-4263-8080-31c0be52fe66) and click on Share -> Publish.
+```bash
+npm run build
+```
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Wave 2 Progress**: Evolved from Wave 1 designs into executable MVP with real Filecoin testnet integration.

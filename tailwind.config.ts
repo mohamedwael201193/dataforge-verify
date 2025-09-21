@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +60,21 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        
+        /* AI Theme Colors */
+        ai: {
+          blue: "hsl(var(--ai-blue))",
+          purple: "hsl(var(--ai-purple))",
+          cyan: "hsl(var(--ai-cyan))",
+        },
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
+      },
+      backgroundImage: {
+        'gradient-ai': 'var(--gradient-ai)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
+        'data-pattern': 'radial-gradient(circle at 25% 25%, hsl(217 91% 60% / 0.2) 0%, transparent 50%), radial-gradient(circle at 75% 75%, hsl(261 83% 58% / 0.2) 0%, transparent 50%)',
       },
       borderRadius: {
         lg: "var(--radius)",
