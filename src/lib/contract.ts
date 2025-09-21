@@ -2,11 +2,11 @@ import { ethers } from 'ethers';
 
 // Filecoin Calibration Testnet Configuration
 export const FILECOIN_CONFIG = {
-  chainId: 3141592,
+  chainId: 314159,
   rpcUrl: import.meta.env.VITE_RPC_URL || 'https://calibration.filfox.info/rpc/v1',
   symbol: 'tFIL',
   name: 'Filecoin Calibration Testnet',
-  blockExplorer: 'https://calibration.filscan.io'
+  blockExplorer: 'https://calibration.filfox.info/en'
 };
 
 export const CONTRACT_ADDRESS = '0x569C43c4Cb8e332037Bc02ae997177F35cd8a017';
