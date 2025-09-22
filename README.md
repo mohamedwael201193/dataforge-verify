@@ -1,6 +1,5 @@
 <div align="center">
 
-![DataForge Hub Banner](./assets/banner.png)
 
 # 🚀 DataForge Hub
 ### The Premier Marketplace for Verifiable AI Datasets on Filecoin
