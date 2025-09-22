@@ -1,154 +1,360 @@
-🚀 DataForge Hub - Verifiable AI Datasets on Filecoin Onchain Cloud
+<div align="center">
 
-DataForge Hub is the premier decentralized marketplace for cryptographically verifiable AI datasets, powered by Filecoin Onchain Cloud. We solve AI bias from centralized data silos (80% from 5 giants) by enabling trustless, fast, and fair data access. Wave 2 MVP: From design blueprints to live testnet execution – real contract NFT mints, PDP dashboards, FilCDN previews, and Pay rails.
-🌟 Live Demo: https://dataforge-verify.vercel.app/
-📱 Mobile-Ready: Responsive UX, dark/light mode.
-🔗 Contract Explorer: Filfox Calibration
-🎥 Demo Video: Watch 1-Min Walkthrough (Embed YouTube/Loom here)
+![DataForge Hub Banner](./assets/banner.png)
 
-🎯 Why DataForge Hub? (The AI Data Revolution)
-AI models reflect their data – but centralized sources breed bias, opacity, and scarcity. DataForge Hub democratizes AI training data:
+# 🚀 DataForge Hub
+### The Premier Marketplace for Verifiable AI Datasets on Filecoin
 
-* Verifiable Provenance: PDP proofs ensure data integrity (no tampering).
-* Fast Access: FilCDN for <1s global retrieval.
-* Fair Monetization: Filecoin Pay for streaming/one-time rails, tied to SLAs.
-* Bias-Free Marketplace: Community-voted quality, diversity charts for ethical AI.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-dataforge--verify.vercel.app-blue?style=for-the-badge)](https://dataforge-verify.vercel.app/)
+[![Smart Contract](https://img.shields.io/badge/📜_Contract-Calibration_Testnet-purple?style=for-the-badge)](https://calibration.filfox.info/en/address/0x569C43c4Cb8e332037Bc02ae997177F35cd8a017)
+[![GitHub](https://img.shields.io/github/stars/mohamedwael201193/dataforge-verify?style=for-the-badge)](https://github.com/mohamedwael201193/dataforge-verify)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-Target Users: AI/ML devs, researchers, DePIN operators – need auditable, bias-reduced datasets.
-PMF Validation: Wave 2 MVP proves full-stack feasibility; Wave 3: Real Synapse + partnerships (e.g., Hugging Face).
-🚀 Wave 2 MVP: Key Features
-From Wave 1 designs to executable code – we've built a frictionless dApp showcasing Filecoin depth.
-📋 Core Flows
+*Solving AI bias through cryptographically verifiable datasets with PDP proofs, FilCDN retrieval, and streaming payments.*
 
-1. Browse Datasets (/browse): Search/filter (name/price/AI category), sortable cards with PDP badges. Mock 5+ datasets; infinite scroll.
-2. Dataset Details (/dataset/:id): Immersive view with Data Integrity Dashboard:
+[[🏗️ Architecture](#️-deep-filecoin-onchain-cloud-integration) • [⚡ Quick Start](#-quick-start) • [🌟 Features](#-features) • [🤝 Contributing](#-contributing)
 
-PDP Calendar: Recharts heatmap (green/red 30-day proofs, 95% success).
-Bias Viz: Interactive pie/bar charts (e.g., 60% demographic diversity).
-Paid Preview: Micro-payment unlocks FilCDN sample (image/table).
+</div>
 
+---
 
-3. List Dataset (/list): Form (name/desc/CID/price/verified). Mocks Synapse PDP → Connect wallet → registerDataset mints NFT (ERC721).
-4. Buy & Access: Toggle one-time/streaming → processPayment tx. Sim: "10 USDFC/30 days, pause on failed PDP."
-5. Dashboard (/dashboard): Profile (wallet/balance), owned datasets (via balanceOf + getDataset), earnings from Pay events. "Verify PDP" mocks Synapse challenge.
+## 🌟 Wave 2 Achievement: Design → Live MVP
 
-🌟 Filecoin Onchain Cloud Integrations (Full-Stack Depth)
+| **Wave 1** | **Wave 2** |
+|------------|-------------|
+| 📋 Design documents & architecture | 🚀 Live dApp on Filecoin Calibration |
+| 🎨 User flow mockups | 💻 Interactive React MVP |
+| 📊 Service integration plans | ⚡ Real smart contract deployment |
+| 🔄 Static prototypes | 🔗 MetaMask wallet integration |
+| 💡 Conceptual framework | 📊 Dynamic dashboards with live data |
 
-* Synapse SDK Mock: "Orchestrating ProofSet..." in listing; dashboard button simulates hot storage.
-* PDP: Contract isVerified flag; disables buys if false. Beyond storage: Enables "hot" AI previews.
-* FilCDN: Fetch previews (https://gateway.filcdn.io/ipfs/${cid}) – <1s SLA, fallback placeholders.
-* Filecoin Pay: USDFC rails via processPayment; emits events for streaming (daily on PDP success).
-* Compliance: Ownable RBAC; NFT provenance tracks ERC721 transfers.
+**Contract Address**: [`0x569C43c4Cb8e332037Bc02ae997177F35cd8a017`](https://calibration.filfox.info/en/address/0x569C43c4Cb8e332037Bc02ae997177F35cd8a017)
 
-UX Polish: No early wallet (connect on action), tx sims/modals, animations (Framer Motion: hovers/slides), toasts (react-hot-toast), mobile-responsive (Tailwind sm/md/lg).
+---
 
-(Add screenshot: Dashboard with charts)
-📊 Wave 1 → Wave 2 Progress
-AspectWave 1 (Design)Wave 2 (MVP)ArchitectureDiagrams (PDP/CDN/Pay flows)Live testnet deploy (Vercel + Calibration)ContractConceptual ERC721 registryDeployed Solidity (OpenZeppelin secure; addr: 0x569C43c4...)FrontendStatic prototypesReact app with Ethers.js calls (async txs, error handling)IntegrationsService plansReal mocks (Synapse/PDP/FilCDN/Pay) + dashboard viz (Recharts)UXWireframesFrictionless flows, animations, tx sims; mobile-optimizedValidationGTM strategyEnd-to-end testing: Mint NFT → View dashboard → Mock buy/preview
-Criteria Hit: Deep integration (30%: Full-stack mocks + txs), Creativity/UX (20%: Unique dashboard), Execution (25%: Stable code/docs), Progress (10%: Design → MVP), Engagement (15%: Cohort feedback).
-🛠 Tech Stack
-Frontend
+## 🎯 The Problem We Solve
 
-* React 18+: Hooks/Context for state (wallet/datasets).
-* Tailwind CSS: Dark mode gradients (#3B82F6-#8B5CF6), glassmorphism (blur hovers).
-* React Router: Page navigation.
-* Recharts: PDP/bias charts (heatmaps, pies).
-* Framer Motion: Animations (fades, scales, confetti).
-* Lucide React: AI/data icons.
-* react-hot-toast: Error/success toasts.
+**80% of AI training data comes from just 5 centralized sources** - creating systemic bias in:
+- 🏥 Healthcare algorithms
+- 💰 Financial credit scoring
+- 👥 Hiring and recruitment tools
+- 🚗 Autonomous vehicle systems
 
-Blockchain
+**DataForge Hub democratizes AI data** through verifiable, decentralized datasets where provenance and quality are guaranteed on-chain.
 
-* Ethers.js v6: FVM provider (Calibration RPC: https://calibration.filfox.info/rpc/v1, Chain ID: 3141592, tFIL).
-* Solidity 0.8.20: DatasetRegistry.sol (ERC721 + Ownable; import OpenZeppelin).
-* MetaMask + Filecoin Snap: Wallet connect/switch.
+---
 
-Deployment
+## 🏗️ Deep Filecoin Onchain Cloud Integration
 
-* Vercel: Auto-deploy from GitHub (env vars: RPC/CHAIN_ID/ABI).
-* No Backend: Direct contract calls + localStorage mocks.
+<div align="center">
 
-Key Files
+```mermaid
+graph TD
+    A[AI Developer] -->|Browse Datasets| B[DataForge Hub]
+    B -->|Upload Data| C[Synapse SDK]
+    C -->|Store & Verify| D[PDP Warm Storage]
+    D -->|Proof Success| E[FilCDN Retrieval]
+    E -->|Stream Payments| F[Filecoin Pay]
+    F -->|Quality Rewards| G[Community Voting]
+    G -->|NFT Ownership| H[On-Chain Provenance]
+```
 
-* /src/App.js: Router + WalletProvider.
-* /contracts/DatasetRegistry.sol: Smart contract (compile/deploy via Remix).
-* /src/config/contract.js: ABI + address.
-* /public/favicon.ico: Custom AI icon.
+</div>
 
-⚡ Quick Start (5 Mins)
-Prerequisites
+### 🔐 PDP (Proof of Data Possession)
+* **Beyond Cold Storage:** Enables "hot" interactive AI previews.
+* **Visual Dashboard:** 30-day proof success calendar (95%+ uptime).
+* **Trust Mechanism:** Payments auto-pause on failed proofs.
 
-* Node.js 18+.
-* MetaMask + Filecoin Snap (for testing).
-* tFIL from faucet: Calibration Faucet.
+### ⚡ FilCDN Integration
+* **Blazing Speed:** <1s dataset previews via global CDN.
+* **Try Before You Buy:** Micro-payment sampling system.
+* **SP Protection:** No egress cost concerns.
 
-Setup
+### 💰 Filecoin Pay Rails
+* **USDFC Streaming:** Payments tied to PDP verification.
+* **Flexible Models:** One-time or subscription access.
+* **SLA-Native:** "Pay only for verified availability."
 
-1. 
-Clone & Install:
-bashDownloadCopy code Wrapgit clone https://github.com/mohamedwael201193/dataforge-verify.git
+### 🎯 Synapse SDK Orchestration
+* **Seamless Onboarding:** ProofSet creation simulation.
+* **Developer Ready:** Full JavaScript/TypeScript integration.
+* **Production Scaling:** Mock → Real service transition ready.
+
+---
+
+## 🌟 Features
+
+### 📊 Verifiable Data Integrity
+First-of-its-kind visualization showing:
+* **PDP Proof Calendar:** Green/red heatmap of daily verification.
+* **Bias Analysis Charts:** Interactive diversity metrics.
+* **Provenance Timeline:** Complete ownership history.
+
+### 💸 Pay-Per-Sample
+* Micro-payments for dataset samples before full purchase.
+* FilCDN-powered instant access to previews.
+* Risk-free evaluation for AI developers.
+
+### ✨ Web2-Like User Experience
+* Frictionless browsing without wallet connection.
+* Professional animations and responsive design.
+* Clear transaction previews and error handling.
+
+---
+
+## 🎥 Demo Video
+
+*Replace this with a link to your 2-minute walkthrough video!*
+
+---
+
+## ⚡ Quick Start
+
+### Prerequisites
+* Node.js 18+ and npm
+* MetaMask browser extension
+* Testnet FIL from a [Filecoin Faucet](https://faucet.calibration.fildev.network/)
+
+### Installation
+```bash
+# Clone the repository
+git clone [https://github.com/mohamedwael201193/dataforge-verify.git](https://github.com/mohamedwael201193/dataforge-verify.git)
 cd dataforge-verify
-npm install  # Installs: ethers, tailwindcss, react-router-dom, recharts, framer-motion, lucide-react, react-hot-toast
 
-2. 
-Env Vars (Copy .env.example to .env):
-REACT_APP_RPC_URL=https://calibration.filfox.info/rpc/v1
-REACT_APP_CHAIN_ID=3141592
-REACT_APP_CURRENCY=tFIL
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Environment Setup
+Create a `.env.local` file in the root directory and add the following:
+```bash
+# Filecoin Calibration Testnet Configuration
 REACT_APP_CONTRACT_ADDRESS=0x569C43c4Cb8e332037Bc02ae997177F35cd8a017
-REACT_APP_ABI=[Full ABI JSON - paste from Remix or below]
+REACT_APP_RPC_URL=[https://api.calibration.node.glif.io/rpc/v1](https://api.calibration.node.glif.io/rpc/v1)
+REACT_APP_CHAIN_ID=314159
+REACT_APP_NETWORK_NAME="Filecoin - Calibration testnet"
+REACT_APP_EXPLORER_URL=[https://calibration.filfox.info/en](https://calibration.filfox.info/en)
+```
 
+### MetaMask Network Setup
+Add the Filecoin Calibration network to MetaMask:
+- **Network Name:** `Filecoin - Calibration testnet`
+- **RPC URL:** `https://api.calibration.node.glif.io/rpc/v1`
+- **Chain ID:** `314159`
+- **Currency:** `tFIL`
+- **Block Explorer:** `https://calibration.filfox.info/en`
 
-3. 
-Run Locally:
-bashDownloadCopy code Wrapnpm start  # http://localhost:3000
+---
 
-Test: Browse → List dataset (connect MetaMask) → Mint NFT → Dashboard.
+## 🛠️ Tech Stack
 
+- **Frontend:** React, Tailwind CSS, Framer Motion
+- **Blockchain:** Solidity, Hardhat, Ethers.js
+- **Services:** Filecoin Onchain Cloud (PDP, FilCDN, Filecoin Pay), Synapse SDK
+- **Tools:** Vercel, GitHub, Mermaid.js
 
-4. 
-Deploy:
+---
 
-Vercel: Connect GitHub repo → Deploy (auto-builds on push).
-Netlify: Drag ZIP or GitHub link.
+## 📋 Smart Contract API
 
+### Core Functions
+```solidity
+// Register new dataset (returns NFT token ID)
+function registerDataset(
+    string _name,
+    string _description,
+    string _cid,
+    uint256 _price,
+    bool _isVerified
+) external onlyOwner returns (uint256);
 
+// Process payment for dataset access
+function processPayment(
+    uint256 _tokenId,
+    uint256 _amount
+) external;
 
-Smart Contract ABI (Embed in Env)
-jsonDownloadCopy code Wrap[
-  {"inputs":[{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_description","type":"string"},{"internalType":"string","name":"_cid","type":"string"},{"internalType":"uint256","name":"_price","type":"uint256"},{"internalType":"bool","name":"_isVerified","type":"bool"}],"name":"registerDataset","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},
-  {"inputs":[{"internalType":"uint256","name":"_tokenId","type":"uint256"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"processPayment","outputs":[],"stateMutability":"nonpayable","type":"function"},
-  {"inputs":[{"internalType":"uint256","name":"_tokenId","type":"uint256"}],"name":"getDataset","outputs":[{"components":[{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"description","type":"string"},{"internalType":"string","name":"cid","type":"string"},{"internalType":"uint256","name":"price","type":"uint256"},{"internalType":"bool","name":"isVerified","type":"bool"}],"internalType":"struct DatasetRegistry.Dataset","name":"","type":"tuple"}],"stateMutability":"view","type":"function"}
-  // Full ABI: Include all ERC721/Ownable/events from Remix export
-]
-Testing on Testnet
+// Fetch dataset information
+function getDataset(uint256 _tokenId)
+    external view returns (Dataset memory);
+```
 
-* Deploy Contract: Remix IDE → Solidity Compiler (0.8.20) → Deploy to Injected (MetaMask Calibration).
-* Verify Tx: After mint/buy, check Filfox for events (DatasetRegistered, PaymentProcessed).
-* Troubleshooting:
+### Events
+```solidity
+event DatasetRegistered(uint256 indexed tokenId, string cid, bool verified);
+event PaymentProcessed(uint256 indexed tokenId, uint256 amount);
+```
 
-Wallet Error: Switch to Calibration (Chain ID 3141592, filfox RPC). Install Filecoin Snap.
-No tFIL: Faucet request – wait 1 min.
-Tx Fails: Check gas (0.01 tFIL), owner (deployer wallet for register).
-Mocks Not Loading: Clear localStorage; refresh.
-RPC Issues: Fallback to env var; test provider in console.
+---
 
+## 🗂️ Project Structure
 
+```
+dataforge-verify/
+├── public/
+│   ├── favicon.ico
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Dashboard/
+│   │   ├── DatasetCard/
+│   │   ├── IntegrityDashboard/
+│   │   └── WalletConnect/
+│   ├── pages/
+│   │   ├── Browse.jsx
+│   │   ├── DatasetDetail.jsx
+│   │   ├── Dashboard.jsx
+│   │   └── ListDataset.jsx
+│   ├── hooks/
+│   │   ├── useContract.js
+│   │   └── useWallet.js
+│   ├── utils/
+│   │   ├── contract.js
+│   │   └── constants.js
+│   └── App.jsx
+├── README.md
+├── package.json
+└── .env.example
+```
 
-🤝 Contributing
+---
 
-1. Fork → Clone → Create branch (git checkout -b feature/amazing-feature).
-2. Commit (git commit -m "Add PDP viz enhancement").
-3. Push → PR to main.
-4. Ideas: Real Synapse integration, ML bias detection, DAO voting.
+## 🚀 Deployment
 
-Guidelines: Semantic commits, TypeScript where possible, test txs on testnet.
-📄 License
-MIT License – Free to use, fork, and build upon. See LICENSE.
-🙌 Acknowledgments
+### Vercel (Recommended)
+1.  Connect your GitHub repository to Vercel.
+2.  Add the environment variables from your `.env.local` file to the Vercel project settings.
+3.  Deploy! Vercel will automatically build and deploy your app on every push to the main branch.
 
-* Filecoin Team: Onchain Cloud docs, Calibration testnet.
-* OpenZeppelin: Secure contracts.
-* Lovable.dev: AI-assisted MVP generation.
-* Community: Wave 2 feedback from standups.
+### Manual Deployment
+```bash
+# Build the app for production
+npm run build
 
+# The static files will be in the 'build' directory.
+# You can deploy this folder to any static hosting service.
+```
+
+---
+
+## 🧪 Testing
+
+### Frontend Testing
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage report
+npm test -- --coverage
+
+# Run tests in watch mode
+npm test -- --watch
+```
+
+### Smart Contract Testing
+```bash
+# Deploy to a local testnet (requires Hardhat)
+npx hardhat node
+npx hardhat run scripts/deploy.js --network localhost
+
+# Run contract tests
+npx hardhat test
+```
+### Manual Testing Checklist
+- [ ] Wallet connection (MetaMask + Filecoin network).
+- [ ] Browse datasets without a wallet connected.
+- [ ] Register a new dataset (requires wallet + tFIL).
+- [ ] View dataset details and integrity dashboard.
+- [ ] Process payment transactions successfully.
+- [ ] Dashboard correctly shows owned datasets and earnings.
+- [ ] The entire site is mobile-responsive.
+- [ ] Error handling works for network issues, insufficient funds, etc.
+
+---
+
+## 🎯 User Flows
+1.  **Dataset Discovery (No Wallet Required):**
+    `Landing Page → Browse → Search/Filter → Dataset Detail → Preview`
+2.  **Dataset Registration (Wallet Required):**
+    `List Dataset → Connect Wallet → Fill Form → Submit Transaction → Dashboard`
+3.  **Dataset Purchase (Wallet Required):**
+    `Dataset Detail → Connect Wallet → Choose Payment → Process Transaction → Access`
+
+---
+
+## 🔮 Roadmap
+
+### Wave 3: Production Polish
+- [ ] Real Synapse SDK integration for live storage deals.
+- [ ] Advanced bias detection algorithms and visualizations.
+- [ ] Community rating and review system.
+- [ ] Bulk dataset management features.
+- [ ] Full smart contract security audit.
+
+### Wave 4: Market Launch
+- [ ] Mainnet deployment with real FIL and USDFC.
+- [ ] Partnership integrations (Hugging Face, Kaggle).
+- [ ] Enterprise features and a dedicated API.
+- [ ] Mobile app development (PWA or native).
+- [ ] Governance token launch for the DAO.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community!
+
+### Development Setup
+```bash
+# Fork the repository
+git clone [https://github.com/your-username/dataforge-verify.git](https://github.com/your-username/dataforge-verify.git)
+
+# Create a feature branch
+git checkout -b feature/amazing-feature
+
+# Make your changes and commit
+git commit -m "Add amazing feature"
+
+# Push to your fork and create a Pull Request
+git push origin feature/amazing-feature
+```
+
+### Contribution Guidelines
+* **🐛 Bug Reports:** Use GitHub Issues with detailed descriptions, screenshots, and steps to reproduce.
+* **💡 Feature Requests:** Propose new ideas with clear use cases and benefits.
+* **📖 Documentation:** Help improve setup guides, API docs, and comments.
+
+---
+
+## 🌟 Community & Support
+
+- **💬 Community:** Join the [Filecoin Slack](https://filecoin.io/slack) for discussions.
+- **🐦 Updates:** Follow [@Filecoin](https://twitter.com/Filecoin) for ecosystem news.
+- **📧 Direct Support:** Open a [GitHub Issue](https://github.com/mohamedwael201193/dataforge-verify/issues) for technical questions.
+- **🎥 Office Hours:** Attend the weekly Filecoin community calls.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+* **Filecoin Team:** For the amazing Onchain Cloud infrastructure.
+* **OpenZeppelin:** For battle-tested smart contract security.
+* **Vercel:** For seamless deployment and hosting.
+
+<div align="center">
+
+⭐ *Star this repo if you found it helpful!* ⭐
+
+*Made with 💜 for the Filecoin ecosystem.*
+
+</div>
