@@ -10,6 +10,10 @@ import Browse from "@/pages/Browse";
 import DatasetDetail from "@/pages/DatasetDetail";
 import ListDataset from "@/pages/ListDataset";
 import Dashboard from "@/pages/Dashboard";
+import Fund from "@/pages/Fund";
+import Upload from "@/pages/Upload";
+import Retrieve from "@/pages/Retrieve";
+import Access from "@/pages/Access";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +33,10 @@ const App = () => (
               <Route path="/dataset/:id" element={<DatasetDetail />} />
               <Route path="/list" element={<ListDataset />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/fund" element={<Fund />} />
+              <Route path="/upload" element={<Upload />} />
+              <Route path="/retrieve" element={<Retrieve />} />
+              <Route path="/access" element={<Access />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>

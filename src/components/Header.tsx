@@ -32,8 +32,11 @@ const Header: React.FC = () => {
 
   const navigation = [
     { name: 'Browse', href: '/browse', icon: Database },
-    { name: 'List Dataset', href: '/list', icon: Shield },
-    { name: 'Dashboard', href: '/dashboard', icon: Zap },
+    { name: 'Fund', href: '/fund', icon: Wallet },
+    { name: 'Upload', href: '/upload', icon: Shield },
+    { name: 'Retrieve', href: '/retrieve', icon: Database },
+    { name: 'Access', href: '/access', icon: Zap },
+    { name: 'Dashboard', href: '/dashboard', icon: Brain },
   ];
 
   const isActive = (path: string) => location.pathname === path;
